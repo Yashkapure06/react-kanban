@@ -20,26 +20,15 @@ function Home() {
     };
   });
 
-
   const boards = useSelector((state) => state.boards);
   const board = boards.find((board) => board.isActive === true);
   const columns = board.columns;
 
-
   return (
-    <div
-      className=" scrollbar-hide h-screen flex dark:bg-[#20212c]  overflow-x-scroll gap-6  ml-[25px]"
-         
-      
-    >
-    
-    
+    <div className=" scrollbar-hide h-screen flex dark:bg-[#20212c]  overflow-x-scroll gap-6  ml-[25px]">
       {columns.map((col, index) => (
         <Column key={index} colIndex={index} />
       ))}
-          
-        
-      
     </div>
   );
 }
