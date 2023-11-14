@@ -1,4 +1,4 @@
-# GrateFrontEnd - Kanban
+# GreatFrontEnd - Kanban
 
 ![Screenshot]('./public/screenshot.png')
 
