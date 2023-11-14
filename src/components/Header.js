@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import AddEditTaskModal from "../modals/AddEditTaskModal";
 
-function Header() {
+const Header = () => {
   const [isTaskModalOpen, setIsTaskModalOpen] = useState(false);
 
 
@@ -31,7 +31,6 @@ function Header() {
           </div>
         </div>
 
-        {/* Right Side */}
       </header>
       {isTaskModalOpen && (
         <AddEditTaskModal

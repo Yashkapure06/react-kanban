@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import Column from "./Column";
 
-function Home() {
+const Home = () => {
   const [windowSize, setWindowSize] = useState([
     window.innerWidth,
     window.innerHeight,

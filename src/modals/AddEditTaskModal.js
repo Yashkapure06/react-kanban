@@ -3,14 +3,14 @@ import { useDispatch, useSelector } from "react-redux";
 import { v4 as uuidv4 } from "uuid";
 import boardsSlice from "../redux/boardsSlice";
 
-function AddEditTaskModal({
+const AddEditTaskModal = ({
   type,
   device,
   setIsTaskModalOpen,
   setIsAddTaskModalOpen,
   taskIndex,
   prevColIndex = 0,
-}) {
+}) => {
   const dispatch = useDispatch();
   const [isFirstLoad, setIsFirstLoad] = useState(true);
   const [isValid, setIsValid] = useState(true);

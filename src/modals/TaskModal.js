@@ -4,7 +4,7 @@ import boardsSlice from "../redux/boardsSlice";
 import Subtask from "../components/Subtask";
 import AddEditTaskModal from "./AddEditTaskModal";
 
-function TaskModal({ taskIndex, colIndex, setIsTaskModalOpen }) {
+const TaskModal = ({ taskIndex, colIndex, setIsTaskModalOpen }) => {
   const dispatch = useDispatch();
   const boards = useSelector((state) => state.boards);
   const board = boards.find((board) => board.isActive === true);
@@ -53,7 +53,7 @@ function TaskModal({ taskIndex, colIndex, setIsTaskModalOpen }) {
       onClick={onClose}
       className=" fixed right-0 bg- top-0 px-2 py-4 overflow-scroll scrollbar-hide  z-50 left-0 bottom-0 justify-center items-center flex dropdown "
     >
-      {/* MODAL SECTION */}
+      {/* MODAL  */}
 
       <div className=" scrollbar-hide overflow-y-scroll max-h-[95vh]  my-auto  bg-white dark:bg-[#2b2c37] text-black dark:text-white font-bold shadow-md shadow-[#364e7e1a] max-w-md mx-auto  w-full px-8  py-8 rounded-xl">
         <div className=" relative flex   justify-between w-full items-center">
@@ -68,7 +68,7 @@ function TaskModal({ taskIndex, colIndex, setIsTaskModalOpen }) {
           Subtasks ({completed} of {subtasks.length})
         </p>
 
-        {/* subtasks section */}
+        {/* subtasks  */}
 
         <div className=" mt-3 space-y-2">
           {subtasks.map((subtask, index) => {
@@ -84,7 +84,7 @@ function TaskModal({ taskIndex, colIndex, setIsTaskModalOpen }) {
 
         </div>
 
-        {/* Current Status Section */}
+        {/* Current Status  */}
 
         <div className="mt-8 flex flex-col space-y-3">
           <label className="  text-sm dark:text-white text-gray-500">

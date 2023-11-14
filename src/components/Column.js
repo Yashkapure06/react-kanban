@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import boardsSlice from "../redux/boardsSlice";
 import Task from "./Task";
 
-function Column({ colIndex }) {
+const Column = ({ colIndex }) => {
   const colors = [
     "bg-[#f582b9]",
     "bg-[#f58282]",
@@ -48,9 +48,7 @@ function Column({ colIndex }) {
     <div
       onDrop={handleOnDrop}
       onDragOver={handleOnDragOver}
-      className="mt-[120px]  w-full mr-10
-    
-      "
+      className="mt-[120px]  w-full mr-10"
     >
     
       <div className="
