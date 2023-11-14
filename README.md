@@ -1,6 +1,6 @@
 # GreatFrontEnd - Kanban
 
-![Screenshot]('./public/screenshot.png')
+![Screenshot](./public/screenshot.png)
 
 
 ## Description
