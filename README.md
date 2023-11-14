@@ -14,6 +14,8 @@ I have created a Kanban board specifically for the <b>GrateFrontEnd Assignment</
 4. The user can edit a task by clicking on any cards.
 5. The user can drag tasks from one column to another.
 
+![Flow](./public/flow.png)
+
 ### Here is the Proper File and Folder Structure:
 
 ```
