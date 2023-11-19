@@ -1,4 +1,4 @@
-# GreatFrontEnd - Kanban
+# React - Kanban
 
 ![Screenshot](./public/screenshot.png)
 
